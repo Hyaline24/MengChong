@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet" media="all" type="text/css">
+    <title>萌宠百科</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+</head>
+<body class="topbody">
+<div id="container">
+    <!--标签盒-->
+    <table class="header">
+	<tr class="tr1"><td><div class="logo"><span class="pic"><img src="img\图标.jpeg" width="150" height="50" alt="萌宠百科"></span></div></td>
+    <td><div class="serch">
+        <form onsubmit="return false;">
+            <input class="serch_input" placeholder="请输入想要搜索的内容" name="keywords" type="text">
+            <input class="serch_btn" value="搜索" name="" type="button">
+        </form>
+        </div>
+    </td>
+    </tr>
+    </table> 
+    <!--轮播图-->
+<div id="pet-carousel" style="width:1000;margin:0 auto;">
+    <div style="position:relative;width:100%;height: 300px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+        <img id="carousel-img" src="img/top1.jpeg" alt="宠物图1" style="width:100%;height:300px;object-fit:cover;transition:opacity 0.5s;">
+        <button id="prev-btn" style="position:absolute;top:50%;left:10px;transform:translateY(-50%);background:rgba(255,255,255,0.7);border:none;border-radius:50%;width:36px;height:36px;cursor:pointer;">&#8592;</button>
+        <button id="next-btn" style="position:absolute;top:50%;right:10px;transform:translateY(-50%);background:rgba(255,255,255,0.7);border:none;border-radius:50%;width:36px;height:36px;cursor:pointer;">&#8594;</button>
+    </div>
+</div>
+<!--导航 star-->
+<div id="menu">
+    <ul>
+		        <li class="m">
+			<h3><a href="top.html">首页</a></h3>
+                </li>
+				<li  class="m">
+			<h3 ><a  href="dog.html">狗狗</a></h3>
+                </li>
+				<li  class="m">
+			<h3 ><a  href="cat.html">猫咪</a></h3>
+                </li>
+				<li  class="m">
+			<h3 ><a  href="pachong.html">爬宠</a></h3>
+                </li >
+    </ul>
+</div>	
+<!--正文-->
+<div class="topmain"> 
+        <h3><span>
+        Humans cannot Live with out pets! Please be kind to animals!
+        </span>
+        </h3>
+        <p><h2>宠物陪伴的意义</h2></p>
+        
+        <p>‌~情感陪伴与心理健康支持‌~</p>
+        <p style="color: rgb(156, 240, 179);">宠物能提供无条件的爱和陪伴，尤其对独居或老年人而言，缓解孤独感。与宠物互动时，人体释放内啡肽，降低压力激素水平，有效减轻焦虑和抑郁情绪。例如，抚摸宠物或与其玩耍可带来平静感，改善整体心理状态。</p>
+        <p>
+        ~‌促进身体健康‌~</p>
+        <p style="color: rgb(156, 240, 179);">养宠物（如狗）需每日遛弯，增加主人运动量，研究表明养狗者每日多步行2000-3000步。规律运动降低心血管疾病风险，增强免疫力（儿童接触宠物减少过敏发病率）。此外，与宠物互动还能降低血压、心率，改善睡眠质量。</p>
+        <p>
+        ‌~培养责任感与同理心‌~</p>
+        <p style="color:rgb(156, 240, 179);">照顾宠物需付出时间和精力，例如喂食、清洁等，让主人（尤其是儿童）学会关爱生命，增强责任感。同时，关注宠物情绪需求还能提升情商和同理心。</p>
+        <p>
+        ‌~拓展社交生活‌~</p>
+        <p style="color: rgb(156, 240, 179);">遛狗或参加宠物活动时，主人更易与他人交流，建立新社交关系。宠物成为社交媒介，帮助扩大朋友圈并增强社会支持感。</p>
+        <p>
+        ~权威例证补充~：</p>
+        <p style="color: rgb(156, 240, 179);">美国心脏协会指出宠物互动可降低心脏病风险，专业工作犬在救援等领域发挥重要作用。</p>
+        <p style="color: rgb(156, 240, 179);">研究显示宠物陪伴提升工作效率与情绪状态，导盲犬等体现宠物特殊社会价值。</p>
+        <p style="color:rgb(156, 240, 179);">总结而言，养宠物不仅是生活选择，更是一种健康生活方式方式的催化剂，从身心到社交全方位提升生活质量。</p>
+    <div class="main2">
+    <h2>常见的养宠疑问</h2>
+    <ul>
+        <li class="qa-item">
+            <span class="question">如何训练小狗定时定点上厕所？</span>
+            <span class="answer" style="display:none;">每天固定时间带小狗到指定地点，成功后立刻奖励，坚持1-2周即可养成习惯。</span>
+        </li>
+        <li class="qa-item">
+            <span class="question">宠物刺猬的刺有毒吗？</span>
+            <span class="answer" style="display:none;">宠物刺猬的刺本身没有毒，但可能携带细菌，被扎后需消毒处理伤口。</span>
+        </li>
+        <li class="qa-item">
+            <span class="question">拉布拉多拉的多吗？</span>
+            <span class="answer" style="display:none;">成年拉布拉多一般每天排便2-3次，幼犬可能4-6次，具体次数受饮食、运动量和健康状况影响。不信谣不传谣欧~</span>
+        </li>
+        <li class="qa-item">
+            <span class="question">如何与宠物建立亲密关系？</span>
+            <span class="answer" style="display:none;">多陪伴、多互动、温柔对待，尊重宠物习性。</span>
+        </li>
+        <li class="qa-item">
+            <span class="question">我可以成为小狗的妈妈/爸爸吗？</span>
+            <span class="answer" style="display:none;">长期的亲自喂养，陪伴，温柔互动当然会捕获小狗的心，但切忌溺爱呦~。</span>
+        </li>
+        </ul>
+    </div>
+</div>
+
+<!--end-->
+      <div id="footer">
+                <address>ALL RIGHTS RESERVED</address>
+                <P>版权所有 个人学习</P>
+            
+        </div>
+<script>
+    $('.serch_btn').click(function(){
+        var keyword = $('input[name=keywords]').val();
+        if(keyword.length!=0){
+            var href = 'https://www.baidu.com/s?wd=site:chongso.com '+keyword;
+            window.open(href,'_blank');
+        };
+    });
+    $(document).keyup(function(event){
+        if(event.keyCode ==13){
+            let keyword = $('input[name=keywords]').val();
+            if(keyword.trim()=='') return;
+            window.open('https://www.baidu.com/s?wd=site:chongso.com '+keyword,'_blank');
+        }
+    });
+    </script>
+<script>
+    // 简单轮播图JSee
+    const imgs = ["img/top1.jpeg", "img/top2.jpg", "img/top3.jpeg"];
+    let idx = 0;
+    const carouselImg = document.getElementById('carousel-img');
+    document.getElementById('prev-btn').onclick = function() {
+        idx = (idx - 1 + imgs.length) % imgs.length;
+        carouselImg.style.opacity = 0.5;
+        setTimeout(() => {
+            carouselImg.src = imgs[idx];
+            carouselImg.style.opacity = 1;
+        }, 200);
+    };
+    document.getElementById('next-btn').onclick = function() {
+        idx = (idx + 1) % imgs.length;
+        carouselImg.style.opacity = 0.5;
+        setTimeout(() => {
+            carouselImg.src = imgs[idx];
+            carouselImg.style.opacity = 1;
+        }, 200);
+    };
+    // 自动轮播
+    setInterval(() => {
+        idx = (idx + 1) % imgs.length;
+        carouselImg.src = imgs[idx];
+    }, 4000);
+</script>
+<script type="text/javascript">
+	jQuery(".navclass").slide({ type:"menu",  titCell:".m", targetCell:".sub", delayTime:0, triggerTime:0,returnDefault:true  });
+</script>
+<!--猫爪特效-->
+<script>
+document.addEventListener('click', function(e) {
+    // 创建img元素
+    var paw = document.createElement('img');
+    paw.src = 'img/paw.png'; // 猫爪印图片路径
+    paw.style.position = 'absolute';
+    paw.style.left = (e.pageX - 24) + 'px'; // 调整中心点
+    paw.style.top = (e.pageY - 24) + 'px';
+    paw.style.width = '48px';
+    paw.style.height = '48px';
+    paw.style.pointerEvents = 'none';
+    paw.style.opacity = '1';
+    paw.style.transition = 'opacity 1s, transform 1s';
+    paw.style.transform = 'scale(1)';
+    paw.className = 'paw-print';
+    document.body.appendChild(paw);
+
+    // 动画效果
+    setTimeout(function(){
+        paw.style.opacity = '0';
+        paw.style.transform = 'scale(1.5) rotate(-20deg)';
+    }, 50);
+    // 移除
+    setTimeout(function(){
+        paw.remove();
+    }, 1050);
+});
+</script>
+<script>
+document.querySelectorAll('.main2 .question').forEach(function(q){
+    q.addEventListener('click', function(){
+        // 隐藏所有答案
+        document.querySelectorAll('.main2 .answer').forEach(function(a){
+            a.style.display = 'none';
+        });
+        // 显示当前答案
+        this.nextElementSibling.style.display = 'inline';
+       
+    });
+});
+</script>
+</body>
+</html>
